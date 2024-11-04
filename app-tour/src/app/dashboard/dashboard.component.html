@@ -1,0 +1,12 @@
+
+<div class="grid-container">
+<div *ngFor="let user of arrList;let i = index;" class='grid-class'>
+    <div class='grid-column'>
+    <h3 id={{user.id}}>{{user.title}}</h3>
+        <div class='helloworld'>
+            {{user.content}} 
+            <button id={{user.navid}} (click)="gotToNewPage(user.id)" class="btn">Go to content Page {{user.id}}</button>
+        </div>
+        </div>
+    </div>
+  </div>
